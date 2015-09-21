@@ -10,16 +10,37 @@ package model;
  * @author sgenerto7.alumnes
  */
 public class Client {
+    
     String nom;
+    String aniversari;
     String dni;
+    int visitats;
     int id;
     int telefon;
     
     public Client(){
         nom="";
+        aniversari="";
         dni="";
+        visitats=0;
         id=0;
         telefon=0;
+    }
+
+    public String getAniversari() {
+        return aniversari;
+    }
+
+    public void setAniversari(String aniversari) {
+        this.aniversari = aniversari;
+    }
+
+    public int getVisitats() {
+        return visitats;
+    }
+
+    public void setVisitats(int visitats) {
+        this.visitats = visitats;
     }
 
     public String getNom() {

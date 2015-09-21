@@ -12,16 +12,27 @@ package model;
 public class Pis {
     String direccio;
     int idPis;
+    int visites;
     boolean oferta;
     double preu;
+    
     
     public Pis(){
         
         direccio="";
         idPis=0;
+        visites=0;
         oferta=false;
         preu=0;
         
+    }
+
+    public int getVisites() {
+        return visites;
+    }
+
+    public void setVisites(int visites) {
+        this.visites = visites;
     }
 
     public String getDireccio() {
